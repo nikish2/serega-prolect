@@ -36,52 +36,65 @@
                 </ul>
             </nav>
 
-            <div class=" messenger">
-                <div class="messenger__wrapper">
-                    <div class="messenger__instagram">
-                        <a href="#"><img src="../images/dist/sprite.svg#icons4-instagram" class="svg-instagram"
-                                alt="instagram"></a>
-                    </div>
-                    <div class="messenger__vk">
-                        <a href="#"><img src="../images/dist/sprite.svg#icons2-vk" class="svg-vk" alt="вконтакте"></a>
-                    </div>
-                    <div class="messenger__whatsapp">
-                        <a href="#"><img src="../images/dist/sprite.svg#icons3-whatsapp" class="svg-whatsapp"
-                                alt="whatsapp"></a>
-                    </div>
-                    <div class="messenger__telegram">
-                        <a href="#"><img src="../images/dist/sprite.svg#icons1-telegram" class="svg-telegram"
-                                alt="telegram"></a>
-                    </div>
-                    <style>
-                        .svg-instagram {
-                            padding-left: 6px;
-                            width: 40px;
-                            height: 40px;
-                        }
+            <div class="header__wrap">
+                <button class="theme">
+                    <img src="../images/dist/sprite.svg#lun" class="theme__none theme__dark theme__dark_active"
+                        alt="темная">
+                    <img src="../images/dist/sprite.svg#icons8-sun" class="theme__light theme__light_active"
+                        alt="светлая">
+                </button>
 
-                        .svg-vk {
-                            padding-left: 6px;
-                            width: 40px;
-                            height: 40px;
-                        }
+                <div class="messenger">
+                    <div class="messenger__wrapper">
+                        <div class="messenger__instagram">
+                            <a href="#"> <img src="../images/dist/sprite.svg#icons6-instagram"
+                                    class="messenger__svg-icons" alt="icons4-instagram"></a>
+                        </div>
+                        <div class="messenger__vk">
+                            <a href="#"><img src="../images/dist/sprite.svg#icons7-vk" class="messenger__svg-icons"
+                                    alt="icons2-vk"></a>
+                        </div>
+                        <div class="messenger__whatsapp">
+                            <a href="#"><img src="../images/dist/sprite.svg#icons4-whatsapp"
+                                    class="messenger__svg-icons" alt="icons3-whatsapp"></a>
+                        </div>
+                        <div class="messenger__telegram">
+                            <a href="#"> <img src="../images/dist/sprite.svg#icons5-telegram"
+                                    class="messenger__svg-icons" alt="icons1-telegram"></a>
+                        </div>
+                        <style>
+                            .svg-instagram {
+                                padding-left: 6px;
+                                width: 40px;
+                                height: 40px;
+                            }
 
-                        .svg-whatsapp {
-                            padding-left: 6px;
-                            width: 40px;
-                            height: 40px;
-                        }
+                            .svg-vk {
+                                padding-left: 6px;
+                                width: 40px;
+                                height: 40px;
+                            }
 
-                        .svg-telegram {
-                            width: 46px;
-                            height: 46px;
-                        }
-                    </style>
+                            .svg-whatsapp {
+                                padding-left: 6px;
+                                width: 40px;
+                                height: 40px;
+                            }
+
+                            .svg-telegram {
+                                width: 46px;
+                                height: 46px;
+                            }
+                        </style>
+                    </div>
+
+                    <div class="number">
+                        <a class="number__tel" href="tel:+79819350626">+7-981-935-06-26</a>
+                    </div>
                 </div>
 
-                <div class="number">
-                    <a class="number__tel" href="tel:+79001111111">+7-900-111-11-11</a>
-                </div>
+
+                
             </div>
         </div>
     </header>
@@ -118,19 +131,21 @@
         <section class="running-image">
             <picture class="running-image__actual">
                 <source srcset="../images/dist/image-transparent.webp" type="image/webp">
-                <img class="running-image__active" src="../images/dist/image-transparent.jpg" alt="circle">
+                <img class="running-image__active" src="../images/dist/image-transparent.jpg"
+                    alt="бугущее изображение с фруктами">
             </picture>
 
             <picture class="running-image__actual">
                 <source srcset="../images/dist/image-transparent.webp" type="image/webp">
-                <img class="running-image__active" src="../images/dist/image-transparent.jpg" alt="circle">
+                <img class="running-image__active" src="../images/dist/image-transparent.jpg"
+                    alt="бугущее изображение с фруктами">
             </picture>
         </section>
 
         <section class="catalog-pastil">
             <div class="container">
                 <h2 class="title">
-                    Наша <span class="title_orange">пастила</span>
+                    Наша <span class="title_orange ">пастила</span>
                 </h2>
 
                 <div class="catalog-pastil__wrapper">
@@ -144,6 +159,25 @@
                             <p>
                                 <span>Пастила</span> <br> Вишня-банан-мёд <br> 220 ₽
                             </p>
+                            <button class="open"></button>
+                            <div class="catalog-pastil__description-product">
+                                <div style="min-height: 0;">
+                                    <p>
+                                        1/2 листа - 120 руб. <br>
+                                        1/4 листа - 70 руб.
+                                    </p>
+                                    <p>
+                                        Пищевая ценность на 100 г продукта:
+                                        белки: 4,6 г, жиры 0,7 г, углеводы 74,6 г, эн. ценность 324,4 ккал.
+                                    </p>
+                                    <p>
+                                        Вес 1 листа ≈ 95 г.
+                                    </p>
+                                    <p>
+                                        Срок годности: 6 месяцев
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <picture>
@@ -153,6 +187,25 @@
                             <p>
                                 <span>Пастила</span> <br> Слива-яблоко <br> 200 ₽
                             </p>
+                            <button class="open"></button>
+                            <div class="catalog-pastil__description-product catalog-pastil__mobil">
+                                <div style="min-height: 0;">
+                                    <p>
+                                        1/2 листа - 110 руб. <br>
+                                        1/4 листа - 65 руб.
+                                    </p>
+                                    <p>
+                                        Пищевая ценность на 100 г продукта:
+                                        белки 3,5 г, жиры 1,3 г, углеводы 69,9 г, эн. ценность 314,1 ккал.
+                                    </p>
+                                    <p>
+                                        Вес 1 листа ≈ 75 г.
+                                    </p>
+                                    <p>
+                                        Срок годности: 6 месяцев
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <picture>
@@ -162,6 +215,22 @@
                             <p>
                                 <span>Пастила</span> <br> Груша-яблоко <br> 200 ₽
                             </p>
+                            <button class="open"></button>
+                            <div class="catalog-pastil__description-product catalog-pastil__transform_tablet">
+                                <div style="min-height: 0;">
+                                    <p>
+                                        1/2 листа - 110 руб. <br>
+                                        1/4 листа - 65 руб.
+                                    </p>
+                                    <p>
+                                        Пищевая ценность на 100 г продукта:
+                                        белки 2,6 г, жиры 1,4 г, углеводы 65,7 г, эн. ценность 295,4 ккал.
+                                    </p>
+                                    <p>
+                                        Срок годности: 6 месяцев
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <picture>
@@ -171,6 +240,25 @@
                             <p>
                                 <span>Пастила</span> <br> Яблоко <br> 180 ₽
                             </p>
+                            <button class="open"></button>
+                            <div class="catalog-pastil__description-product catalog-pastil__transform_laptop">
+                                <div style="min-height: 0;">
+                                    <p>
+                                        1/2 листа - 100 руб. <br>
+                                        1/4 листа - 60 руб.
+                                    </p>
+                                    <p>
+                                        Пищевая ценность на 100 г продукта:
+                                        белки 3,3 г, жиры 3,3 г, углеводы 82 г, эн. ценность 393,3 ккал.
+                                    </p>
+                                    <p>
+                                        Вес 1 листа ≈ 60 г.
+                                    </p>
+                                    <p>
+                                        Срок годности: 6 месяцев
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <picture>
@@ -178,9 +266,30 @@
                                 <img src="../images/dist/Pastil-klybnica-banan-med-220r.jpg"
                                     alt="пастила клубника-банан-мёд">
                             </picture>
+
                             <p>
                                 <span>Пастила</span> <br> Клубника-банан-мёд <br> 220 ₽
                             </p>
+
+                            <button class="open"></button>
+                            <div class="catalog-pastil__description-product catalog-pastil__transform">
+                                <div style="min-height: 0;">
+                                    <p>
+                                        1/2 листа - 120 руб. <br>
+                                        1/4 листа - 70 руб.
+                                    </p>
+                                    <p>
+                                        Пищевая ценность на 100 г продукта:
+                                        белки: 5,3 г, жиры 0,8 г, углеводы 81,1 г, эн. ценность 352,8 ккал.
+                                    </p>
+                                    <p>
+                                        Вес 1 листа ≈ 80 г.
+                                    </p>
+                                    <p>
+                                        Срок годности: 6 месяцев
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <picture>
@@ -190,6 +299,25 @@
                             <p>
                                 <span>Пастила</span> <br> Киви-банан <br> 200 ₽
                             </p>
+                            <button class="open"></button>
+                            <div class="catalog-pastil__description-product catalog-pastil__transform">
+                                <div style="min-height: 0;">
+                                    <p>
+                                        1/2 листа - 110 руб. <br>
+                                        1/4 листа - 65 руб.
+                                    </p>
+                                    <p>
+                                        Пищевая ценность на 100 г продукта:
+                                        белки: 5,9 г, жиры 2,4 г, углеводы 88 г, эн. ценность 396,7 ккал.
+                                    </p>
+                                    <p>
+                                        Вес 1 листа ≈ 85 г.
+                                    </p>
+                                    <p>
+                                        Срок годности: 6 месяцев
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <picture>
@@ -199,6 +327,25 @@
                             <p>
                                 <span>Пастила</span> <br> Яблоко-корица <br> 180 ₽
                             </p>
+                            <button class="open"></button>
+                            <div class="catalog-pastil__description-product catalog-pastil__transform">
+                                <div style="min-height: 0;">
+                                    <p>
+                                        1/2 листа - 100 руб. <br>
+                                        1/4 листа - 60 руб.
+                                    </p>
+                                    <p>
+                                        Пищевая ценность на 100 г продукта:
+                                        белки: 4 г, жиры 4 г, углеводы 82,2 г, эн. ценность 402,7 ккал.
+                                    </p>
+                                    <p>
+                                        Вес 1 листа ≈ 55-60 г.
+                                    </p>
+                                    <p>
+                                        Срок годности: 6 месяцев
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <picture>
@@ -208,6 +355,25 @@
                             <p>
                                 <span>Пастила</span> <br> Банан-орех <br> 220 ₽
                             </p>
+                            <button class="open"></button>
+                            <div class="catalog-pastil__description-product catalog-pastil__transform">
+                                <div style="min-height: 0;">
+                                    <p>
+                                        1/2 листа - 120 руб. <br>
+                                        1/4 листа - 70 руб.
+                                    </p>
+                                    <p>
+                                        Пищевая ценность на 100 г продукта:
+                                        белки: 7,7 г, жиры 11,1 г, углеводы 79,2 г, эн. ценность 448 ккал.
+                                    </p>
+                                    <p>
+                                        Вес 1 листа ≈ 110 г.
+                                    </p>
+                                    <p>
+                                        Срок годности: 6 месяцев
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <picture>
@@ -217,6 +383,25 @@
                             <p>
                                 <span>Пастила</span> <br> Банан-яблоко <br> 180 ₽
                             </p>
+                            <button class="open"></button>
+                            <div class="catalog-pastil__description-product catalog-pastil__transform">
+                                <div style="min-height: 0;">
+                                    <p>
+                                        1/2 листа - 100 руб.
+                                        1/4 листа - 60 руб.
+                                    </p>
+                                    <p>
+                                        Пищевая ценность на 100 г продукта:
+                                        белки: 4,7 г, жиры 1,2 г, углеводы 81,6 г, эн. ценность 363,8 ккал.
+                                    </p>
+                                    <p>
+                                        Вес 1 листа ≈ 85 г.
+                                    </p>
+                                    <p>
+                                        Срок годности: 6 месяцев
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <picture>
@@ -226,6 +411,25 @@
                             <p>
                                 <span>Пастила</span> <br> Смородина-банан-мёд <br> 240 ₽
                             </p>
+                            <button class="open"></button>
+                            <div class="catalog-pastil__description-product catalog-pastil__transform">
+                                <div style="min-height: 0;">
+                                    <p>
+                                        1/2 листа - 130 руб. <br>
+                                        1/4 листа - 75 руб.
+                                    </p>
+                                    <p>
+                                        Пищевая ценность на 100 г продукта:
+                                        белки: 3 г, жиры 1,8 г, углеводы 47,2 г, эн. ценность 238 ккал.
+                                    </p>
+                                    <p>
+                                        Вес 1 листа ≈ 100 г.
+                                    </p>
+                                    <p>
+                                        Срок годности: 6 месяцев
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <picture>
@@ -235,16 +439,35 @@
                             <p>
                                 <span>Пастила</span> <br> Мандарин-яблоко <br> 200 ₽
                             </p>
+                            <button class="open"></button>
+                            <div class="catalog-pastil__description-product catalog-pastil__transform">
+                                <div style="min-height: 0;">
+                                    <p>
+                                        1/2 листа - 110 руб. <br>
+                                        1/4 листа - 65 руб.
+                                    </p>
+                                    <p>
+                                        Пищевая ценность на 100 г продукта:
+                                        белки: 4 г, жиры 1,5 г, углеводы 64,3 г, эн. ценность 297,2 ккал.
+                                    </p>
+                                    <p>
+                                        Вес 1 листа ≈ 65 г.
+                                    </p>
+                                    <p>
+                                        Срок годности: 6 месяцев
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section class="catalog-pastil catalog-pastil__bg-dark-color">
+        <section class="catalog-pastil catalog-pastil__bg-dark-color" style="background-image: url(../images/dist/fruit_snack_vbg_50.webp);">
             <div class="container">
-                <h2 class="title title_brown-color">
-                    Наши <span class="title_light">фрипсы</span>
+                <h2 class="title title_white-color">
+                    Наши <span class="_active">фрипсы</span>
                 </h2>
 
                 <div class="catalog-pastil__wrapper">
@@ -255,8 +478,29 @@
                                 <img src="../images/dist/Frips-limon-100r.jpg" alt="Фрипсы лимон">
                             </picture>
                             <p>
-                                <span>Фрипсы</span> <br> Лимон <br> 100 ₽
+                                <span>Фрипсы</span> <br>
+                                Лимон <br>
                             </p>
+                            <button class="open"></button>
+                            <div class="catalog-pastil__description-product catalog-pastil__transform">
+                                <div style="min-height: 0;">
+                                    <p>
+                                        30 гр. - 100 руб. <br>
+                                        50 гр. - 170 руб. <br>
+                                        100 гр. - 270 руб.
+                                    </p>
+                                    <p>
+                                        Пищевая ценность на 100 гр продукта:
+                                        белки: 4,9 г, жиры 0,4 г, углеводы 74 г, эн. ценность 286 ккал.
+                                    </p>
+                                    <p>
+                                        Состав: 100% лимон. Без сахара и любых добавок.
+                                    </p>
+                                    <p>
+                                        Срок годности: 9 месяцев
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <picture>
@@ -264,9 +508,28 @@
                                 <img src="../images/dist/Frips-ananas-220r.jpg" alt="Фрипсы ананас">
                             </picture>
                             <p>
-                                <span>Фрипсы</span> <br> Ананас <br> 220 ₽
-                              
+                                <span>Фрипсы</span> <br>
+                                Ананас <br>
                             </p>
+                            <button class="open"></button>
+                            <div class="catalog-pastil__description-product catalog-pastil__transform">
+                                <div style="min-height: 0;">
+                                    <p>
+                                        50 гр. - 220 руб. <br>
+                                        100 гр. - 370 руб.
+                                    </p>
+                                    <p>
+                                        Пищевая ценность на 100 гр продукта:
+                                        белки: 2,16 г, жиры 1,2 г, углеводы 61,2 г, эн. ценность 284 ккал.
+                                    </p>
+                                    <p>
+                                        Состав: 100% ананас. Без сахара и любых добавок.
+                                    </p>
+                                    <p>
+                                        Срок годности: 9 месяцев
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <picture>
@@ -274,9 +537,29 @@
                                 <img src="../images/dist/Frips-xyrma-170r.jpg" alt="Фрипсы хурма">
                             </picture>
                             <p>
-                                <span>Фрипсы</span> <br> Хурма <br> 170 ₽
-                              
+                                <span>Фрипсы</span> <br>
+                                Хурма <br>
                             </p>
+                            <button class="open"></button>
+                            <div class="catalog-pastil__description-product catalog-pastil__transform">
+                                <div style="min-height: 0;">
+                                    <p>
+                                        50 гр. - 170 руб. <br>
+                                        100 гр. - 270 руб.
+                                    </p>
+                                    <p>
+                                        Пищевая ценность на 100 гр продукта:
+                                        белки: 4,6 г, жиры 0,6 г, углеводы 71,2 г, эн. ценность 264 ккал.
+                                    </p>
+                                    <p>
+                                        Состав: 100% хурма. Без сахара и любых добавок.
+                                    </p>
+                                    <p>
+                                        Срок годности: 9 месяцев
+                                    </p>
+                                </div>
+                            </div>
+
                         </li>
                         <li>
                             <picture>
@@ -284,40 +567,116 @@
                                 <img src="../images/dist/Frips-apple-corica-130r.jpg" alt="Фрипсы яблоко с корицей">
                             </picture>
                             <p>
-                                <span>Фрипсы</span> <br> Яблоко с корицей <br> 130 ₽
-                              
+                                <span>Фрипсы</span> <br> Яблоко с корицей <br>
                             </p>
+                            <button class="open"></button>
+                            <div class="catalog-pastil__description-product catalog-pastil__transform">
+                                <div style="min-height: 0;">
+                                    <p>
+                                        50 гр. - 130 руб. <br>
+                                        100 гр. - 230 руб.
+                                    </p>
+                                    <p>
+                                        Пищевая ценность на 100 гр продукта:
+                                        белки: 2,3 г, жиры 0,2 г, углеводы 48 г, эн. ценность 201 ккал.
+                                    </p>
+                                    <p>
+                                        Состав: Яблоко, корица. Без сахара и любых добавок.
+                                    </p>
+                                    <p>
+                                        Срок годности: 9 месяцев
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <picture>
                                 <source srcset="../images/dist/Frips-orange-170r.webp" type="image/webp">
-                                <img src="../images/dist/Frips-orange-170r.jpg"
-                                    alt="Фрипсы апельсин">
+                                <img src="../images/dist/Frips-orange-170r.jpg" alt="Фрипсы апельсин">
                             </picture>
                             <p>
-                                <span>Фрипсы</span> <br> Апельсин <br> 170 ₽
-                               
+                                <span>Фрипсы</span> <br> Апельсин <br>
+                                <button class="open"></button>
                             </p>
+                            <div class="catalog-pastil__description-product catalog-pastil__transform">
+                                <div style="min-height: 0;">
+                                    <p>
+                                        50 гр. - 170 руб. <br>
+                                        100 гр. - 270 руб.
+                                    </p>
+                                    <p>
+                                        Внимание: апельсины готовим в кожуре.
+                                    </p>
+                                    <p>
+                                        Пищевая ценность на 100 гр продукта:
+                                        белки: 2,1 г, жиры 1,0 г, углеводы 71 г, эн. ценность 299 ккал.
+                                    </p>
+                                    <p>
+                                        Состав: 100% апельсин. Без сахара и любых добавок.
+                                    </p>
+                                    <p>
+                                        Срок годности: 9 месяцев
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <picture>
                                 <source srcset="../images/dist/Frips-kivi-170r.webp" type="image/webp">
                                 <img src="../images/dist/Frips-kivi-170r.jpg" alt="Фрипсы киви">
+
                             </picture>
                             <p>
-                                <span>Фрипсы</span> <br> Киви <br> 170 ₽
-                               
+                                <span>Фрипсы</span> <br> Киви <br>
                             </p>
+                            <button class="open"></button>
+                            <div class="catalog-pastil__description-product catalog-pastil__transform">
+                                <div style="min-height: 0;">
+                                    <p>
+                                        50 гр. - 170 руб. <br>
+                                        100 гр. - 270 руб.
+                                    </p>
+                                    <p>
+                                        Пищевая ценность на 100 гр продукта:
+                                        белки: 1,1 г, жиры 0,5 г, углеводы 14,7 г, эн. ценность 336 ккал.
+                                    </p>
+                                    <p>
+                                        Состав: 100% киви. Без сахара и любых добавок.
+                                    </p>
+                                    <p>
+                                        Срок годности: 9 месяцев
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <picture>
                                 <source srcset="../images/dist/Frips-grysha-170r.webp" type="image/webp">
                                 <img src="../images/dist/Frips-grysha-170r.jpg" alt="Фрипсы груша">
+
                             </picture>
                             <p>
-                                <span>Фрипсы</span> <br> Груша <br>170 ₽
-                                
+                                <span>Фрипсы</span> <br> Груша <br>
                             </p>
+                            <button class="open"></button>
+                            <div class="catalog-pastil__description-product catalog-pastil__transform">
+                                <div style="min-height: 0;">
+                                    <p>
+                                        50 гр. - 170 руб. <br>
+                                        100 гр. - 270 руб.
+                                    </p>
+                                    <p>
+                                        Пищевая ценность на 100 гр продукта:
+                                        белки: 2,3 г, жиры 0,6 г, углеводы 62,6 г, эн. ценность 249 ккал.
+                                    </p>
+                                    <p>
+                                        Состав: 100% груша. Без сахара и любых добавок.
+                                    </p>
+                                    <p>
+                                        Срок годности: 9 месяцев
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <picture>
@@ -325,9 +684,27 @@
                                 <img src="../images/dist/Frips-banan-120r.jpg" alt="Фрипсы бананы">
                             </picture>
                             <p>
-                                <span>Фрипсы</span> <br> Бананы <br> 120 ₽
-                              
+                                <span>Фрипсы</span> <br> Бананы <br>
                             </p>
+                            <button class="open"></button>
+                            <div class="catalog-pastil__description-product catalog-pastil__transform">
+                                <div style="min-height: 0;">
+                                    <p>
+                                        50 гр. - 120 руб. <br>
+                                        100 гр. - 220 руб.
+                                    </p>
+                                    <p>
+                                        Пищевая ценность на 100 гр продукта:
+                                        белки: 3,9 г, жиры 1,8 г, углеводы 80,5 г, эн. ценность 390 ккал.
+                                    </p>
+                                    <p>
+                                        Состав: 100% банан. Без сахара и любых добавок.
+                                    </p>
+                                    <p>
+                                        Срок годности: 9 месяцев
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <picture>
@@ -335,9 +712,28 @@
                                 <img src="../images/dist/Frips-apple-120r.jpg" alt="Фрипсы яблоко">
                             </picture>
                             <p>
-                                <span>Фрипсы</span> <br>Яблоко <br> 120 ₽
-                                
+                                <span>Фрипсы</span> <br>Яблоко <br>
                             </p>
+                            <button class="open"></button>
+                            <div class="catalog-pastil__description-product catalog-pastil__transform">
+                                <div style="min-height: 0;">
+                                    <p>
+                                        50 гр. - 120 руб. <br>
+                                        100 гр. - 220 руб.
+                                    </p>
+                                    <p>
+                                        Пищевая ценность на 100 гр продукта:
+                                        белки: 2,2 г., жиры 0,1 г., углеводы 59 г., эн. ценность 253 ккал.
+                                    </p>
+                                    <p>
+                                        Состав: 100% яблоки. Без сахара и любых добавок.
+                                    </p>
+                                    <p>
+
+                                        Срок годности: 9 месяцев
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -345,7 +741,65 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
+        <div class="footer__container ">
+            <h2 class="footer__title">
+                свяжитесь с нами
+            </h2>
+            <h3 class="footer__sub-title">
+                наши контакты
+            </h3>
+
+            <ul class="footer__wrapper anim">
+                <li class="footer__mesenger  footer__mesenger_top footer__mesenger_orange">
+                    <a class="footer__instagram" href="#"><span lang="en">instagram</span></a>
+                </li>
+                <li class="footer__mesenger footer__mesenger_brown">
+                    <a class="footer__vk" href="#">вконтакте</a>
+                </li>
+                <li class="footer__mesenger footer__mesenger_top footer__mesenger_brown-light">
+                    <a class="footer__WhatSapp" href="#"><span lang="en">WhatSapp</span></a>
+                </li>
+                <li class="footer__mesenger footer__mesenger_bottom footer__mesenger_crem">
+                    <a class="footer__telegram" href="#"><span lang="en">telegram</span></a>
+                </li>
+            </ul>
+
+            <div class="footer__number">
+                <p>Позвони нам</p>
+                <a href="tel:+79819350626">+7-981-935-06-26</a>
+            </div>
+
+
+
+
+
+            <!-- <div class="footer__inner-contacts">
+                <div class="number">
+                    <a class="number__tel" href="tel:+79001111111">Телефон +7-900-111-11-11</a>
+                    <a class="email" href="mailto:">Почта gensta-fruit@mail.ru</a>
+                </div>
+
+                <div class="footer__messeger">
+                    <p class="footer__text">
+                        так же вы можете познакомиться с нашим ассортиментом в
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="#">instagram</a>
+                        </li>
+                        <li>
+                            <a href="#">вконтакте</a>
+                        </li>
+                        <li>
+                            <p>липо пишите нам в </p>
+                            <a href="#">whatsapp</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div> -->
+        </div>
 
         <!-- <a target="_blank" href="https://icons8.com/icon/113079/заполненный-круг">круг</a> иконка от <a target="_blank" href="https://icons8.com">Icons8</a> -->
     </footer>
