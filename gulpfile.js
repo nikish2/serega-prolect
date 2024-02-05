@@ -51,7 +51,10 @@ function sprite() {
 
 // JS======
 function scripts() {
-    return src('app/js/main.js')
+    return src([
+        'app/js/*.js',
+        '!app/js/main.min.js'
+     ])
         .pipe(concat('main.min.js'))
         .pipe(uglify())
         .pipe(dest('app/js'))
@@ -101,11 +104,14 @@ function cleanDist() {
 // ПЕРЕНОС В ПАПКУ ПРОДАКШН===
 function building() {
     return src([
+        'app/css/swiper-bundle.min.css',
         'app/css/style.min.css',
         'app/images/dist/*.*',
         '!app/images/dist/*.svg',
         'app/images/dist/sprite.svg',
+        'app/video/*.mp4',
         'app/fonts/*.*',
+        'app/js/swiper-bundle.min.js',
         'app/js/main.min.js',
         'app/**/*.html'],
         { base: 'app' })
