@@ -15,9 +15,9 @@ if(menu && burger) {
 
 
 
-let objektHtml = document.querySelector('._active');
+let objektHtml = document.querySelector('.active-text');
 if (typeof (objektHtml) != 'undefined' && objektHtml != null) {
-  const objektHtml = document.querySelector('._active');
+  const objektHtml = document.querySelector('.active-text');
   const text = 'фрипсы';
 
   let i = 0;
