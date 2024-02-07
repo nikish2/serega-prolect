@@ -9,50 +9,47 @@
 </head>
 
 <body>
-    <header class="header" style="background-color: blueviolet;">
+    <header class="header">
         <div class="header__container">
             <picture class="header__logo">
                 <source srcset="../images/dist/LOGO.webp" type="image/webp">
                 <img class="header__img" src="../images/dist/LOGO.jpg" alt="Логотип Fruit Snack">
             </picture>
 
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__aitems">
-                        <a class="header__link" href="index.html ">На главную</a>
-                    </li>
-                    <li class="header__aitems">
-                        <a class="header__link" href="photo.html">Фото</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="header__wrap">
-                <button class="theme">
-                    <img src="../images/dist/sprite.svg#lun" class="theme__none theme__dark theme__dark_active"
-                        alt="темная">
-                    <img src="../images/dist/sprite.svg#icons8-sun" class="theme__light theme__light_active"
-                        alt="светлая">
-                </button>
+            <div class="header__inner">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__aitems">
+                            <a class="header__link" href="index.html">На главную</a>
+                        </li>
+                        <li class="header__aitems">
+                            <a class="header__link" href="photo.html">Фото-блог</a>
+                        </li>
+                    </ul>
+                </nav>
 
                 <div class="messenger">
-                    <div class="messenger__wrapper">
-                        <div class="messenger__instagram">
-                            <a target="_blank" href="https://www.instagram.com/fruit_snack_vbg/"><img src="../images/dist/sprite.svg#icons6-instagram"
-                                    class="messenger__svg-icons" alt="icons4-instagram"></a>
-                        </div>
-                        <div class="messenger__vk">
-                            <a target="_blank" href="https://vk.com/fruit_snack_vbg"><img src="../images/dist/sprite.svg#icons7-vk" class="messenger__svg-icons"
+                    <ul class="messenger__wrapper">
+                        <li class="messenger__instagram">
+                            <a target="_blank" href="https://www.instagram.com/fruit_snack_vbg/"><img
+                                    src="../images/dist/sprite.svg#icons6-instagram" class="messenger__svg-icons"
+                                    alt="icons4-instagram"></a>
+                        </li>
+                        <li class="messenger__vk">
+                            <a target="_blank" href="https://vk.com/fruit_snack_vbg"><img
+                                    src="../images/dist/sprite.svg#icons7-vk" class="messenger__svg-icons"
                                     alt="icons2-vk"></a>
-                        </div>
-                        <div class="messenger__whatsapp">
-                            <a target="_blank" href="https://web.whatsapp.com/"><img src="../images/dist/sprite.svg#icons4-whatsapp"
-                                    class="messenger__svg-icons" alt="icons3-whatsapp"></a>
-                        </div>
-                        <div class="messenger__telegram">
-                            <a target="_blank" href="https://web.telegram.org"> <img src="../images/dist/sprite.svg#icons5-telegram"
-                                    class="messenger__svg-icons" alt="icons1-telegram"></a>
-                        </div>
+                        </li>
+                        <li class="messenger__whatsapp">
+                            <a target="_blank" href="https://web.whatsapp.com/"><img
+                                    src="../images/dist/sprite.svg#icons4-whatsapp" class="messenger__svg-icons"
+                                    alt="icons3-whatsapp"></a>
+                        </li>
+                        <li class="messenger__telegram">
+                            <a target="_blank" href="https://web.telegram.org"> <img
+                                    src="../images/dist/sprite.svg#icons5-telegram" class="messenger__svg-icons"
+                                    alt="icons1-telegram"></a>
+                        </li>
                         <style>
                             .svg-instagram {
                                 padding-left: 6px;
@@ -77,22 +74,86 @@
                                 height: 46px;
                             }
                         </style>
-                    </div>
-
+                    </ul>
                     <div class="number">
                         <a class="number__tel" href="tel:+79819350626">+7-981-935-06-26</a>
                     </div>
                 </div>
+            </div>
+
+            <div class="header__end-block">
+                <div class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+    
+                <button class="theme">
+                    <img src="../images/dist/sprite.svg#lun" class="theme__none theme__dark theme__dark_active"
+                        alt="темная">
+                    <img src="../images/dist/sprite.svg#icons8-sun" class="theme__light theme__light_active" alt="светлая">
+                </button>
             </div>
         </div>
     </header>
 
 
     <main class="main">
-       
+       <div class="delivery">
+        <div class="delivery__container">
+            <div class="delivery__content">
+                <h1>Отправка по всей России</h1>
+                <div class="delivery__inner">
+                    <p>
+                        Отправляем товар в регионы
+                    </p>
+                    <p>
+                        Доставка по тарифам транспортной компании / почты <br> за счет покупателя
+                    </p>
+                    <p>
+                        При заказе от 2500 ₽ доставка осуществляется за наш счет 👍🏼
+                    </p>
+                </div>
+            </div>
+        </div>
+       </div>
     </main>
 
-    <footer class="footer" id="contacts">
+    <footer class="footer" style=" background-image: image-set(
+        url(../images/dist/translucent-image.webp), 
+        url(../images/dist/translucent-image.jpg));" id="contacts">
+        <div class="footer__container ">
+            <h2 class="footer__title">
+                свяжитесь с нами
+            </h2>
+            <h3 class="footer__sub-title">
+                наши контакты
+            </h3>
+
+            <ul class="footer__wrapper anim">
+                <li class="footer__mesenger  footer__mesenger_top footer__mesenger_orange">
+                    <a class="footer__instagram" target="_blank" href="ttps://www.instagram.com/fruit_snack_vbg"><span
+                            lang="en">instagram</span></a>
+                </li>
+                <li class="footer__mesenger footer__mesenger_brown">
+                    <a class="footer__vk" target="_blank" href="https://vk.com/fruit_snack_vbg">вконтакте</a>
+                </li>
+                <li class="footer__mesenger footer__mesenger_top footer__mesenger_brown-light">
+                    <a class="footer__WhatSapp" target="_blank" href="https://web.whatsapp.com/"><span
+                            lang="en">WhatSapp</span></a>
+                </li>
+                <li class="footer__mesenger footer__mesenger_bottom footer__mesenger_crem">
+                    <a class="footer__telegram" target="_blank" href="https://web.telegram.org"><span
+                            lang="en">telegram</span></a>
+                </li>
+            </ul>
+
+            <div class="footer__number">
+                <p>Позвони нам</p>
+                <a href="tel:+79819350626">+7-981-935-06-26</a>
+            </div>
+        </div>
+
         <!-- <a target="_blank" href="https://icons8.com/icon/113079/заполненный-круг">круг</a> иконка от <a target="_blank" href="https://icons8.com">Icons8</a> -->
     </footer>
     <script  src="js/main.min.js"></script>

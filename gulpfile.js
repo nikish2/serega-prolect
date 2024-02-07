@@ -109,7 +109,7 @@ function building() {
         'app/images/dist/*.*',
         '!app/images/dist/*.svg',
         'app/images/dist/sprite.svg',
-        'app/video/*.mp4',
+        'app/video/*.*',
         'app/fonts/*.*',
         'app/js/swiper-bundle.min.js',
         'app/js/main.min.js',

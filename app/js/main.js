@@ -1,4 +1,19 @@
 
+const menu = document.querySelector('.header__inner');
+const burger = document.querySelector('.header__burger');
+
+const bodY = document.body;
+if(menu && burger) {
+  burger.addEventListener('click', ()=> {
+    menu.classList.toggle('_active');
+    burger.classList.toggle('_active');
+    // bodY.classList.toogle('lock');
+  })
+}
+
+
+
+
 
 let objektHtml = document.querySelector('._active');
 if (typeof (objektHtml) != 'undefined' && objektHtml != null) {
