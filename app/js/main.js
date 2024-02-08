@@ -53,23 +53,23 @@ if (typeof (openBlock) != 'undefined' && openBlock != null) {
   });
 }
 
-let elements = document.querySelector('.anim');
-if (typeof (elements) != 'undefined' && elements != null) {
-  let options = { threshold: [0.5] };
-  let observer = new IntersectionObserver(onEntry, options);
-  let elements = document.querySelectorAll('.anim');
+// let elements = document.querySelector('.anim');
+// if (typeof (elements) != 'undefined' && elements != null) {
+//   let options = { threshold: [0.5] };
+//   let observer = new IntersectionObserver(onEntry, options);
+//   let elements = document.querySelectorAll('.anim');
 
-  for (let elm of elements) {
-    observer.observe(elm);
-  }
-  function onEntry(entry) {
-    entry.forEach(change => {
-      if (change.isIntersecting) {
-        change.target.classList.add('scrol');
-      }
-    });
-  };
-}
+//   for (let elm of elements) {
+//     observer.observe(elm);
+//   }
+//   function onEntry(entry) {
+//     entry.forEach(change => {
+//       if (change.isIntersecting) {
+//         change.target.classList.add('scrol');
+//       }
+//     });
+//   };
+// }
 
 // создание светлой и темной темы при обновлении страницы тема запоминается и остается 
 
