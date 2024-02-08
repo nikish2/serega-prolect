@@ -720,19 +720,12 @@ body {
     }
 }
 
-@media (aspect-ratio:1/3) {
-    .header__inner {
-        display: flex;
-        flex-direction: row;
-    }
-}
-
 @media(max-width:$tablet) {
     .header__inner {
-        aspect-ratio: 2 / 1;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        gap: 5%;
         opacity: 0;
         position: absolute;
         left: 0;
@@ -793,12 +786,17 @@ body {
         max-width: 90%;
     }
 
+    .block-photo__wrapper {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
     ._active {
         display: flex;
         opacity: 1;
         transform: translateX(0%);
         transition: all 0.5s;
-        height: 100vh;
+        height:100dvh;
 
         span {
             transform: scale(0);
