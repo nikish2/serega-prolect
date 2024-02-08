@@ -790,6 +790,10 @@ body {
         transform: translateX(0%);
         opacity: 1;
     }
+    .block-photo__text {
+        max-height: 220px;
+    }
+
 
     ._active {
         display: flex;
@@ -838,6 +842,9 @@ body {
         background-color: #5e4d42a6;
     }
 
+    .block-photo__text {
+        max-height: 170px;
+    }
     .swiper-button-next:after,
     .swiper-button-prev:after,
     .swiper-button-next:after,
