@@ -1,5 +1,5 @@
 
-const menu = document.querySelector('.header__inner');
+const menu = document.querySelector('.header__nav');
 const burger = document.querySelector('.header__burger');
 
 const bodY = document.body;
