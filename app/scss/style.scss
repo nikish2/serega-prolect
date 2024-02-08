@@ -685,11 +685,10 @@ body {
 
 
 
-
-
-
-
 @media(max-width:$laptop) {
+    .header__nav{
+        gap: 10px;
+    }
     .running-image__active {
         height: 190px;
     }
