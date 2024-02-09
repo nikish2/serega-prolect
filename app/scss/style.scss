@@ -754,6 +754,11 @@ body {
         background-color: $color-brown;
     }
 
+    .header__aitems_none,
+    .header__link_open-burger {
+        display: none;
+    }
+    
     .header__list {
         flex-direction: column;
         @include fluid-text(30, 25);
