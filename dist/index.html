@@ -6,6 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Пастила</title>
+    <style>
+        .section-hero {
+            background-image: url('./images/dist/bacground-icon.jpg');
+            background-image: -webkit-image-set(url('./images/dist/bacground-icon.webp'), url('./images/dist/bacground-icon.jpg'));
+            background-image: -ms-image-set(url('./images/dist/bacground-icon.webp'), url('./images/dist/bacground-icon.jpg'));
+            background-image: image-set(url('./images/dist/bacground-icon.webp') 1x, url('./images/dist/bacground-icon.jpg') 2x);
+        }
+        .catalog-pastil__bg-dark-color {
+            background-image: url('./images/dist/fruit_snack_vbg_50.jpg');
+            background-image: -webkit-image-set(url('./images/dist/fruit_snack_vbg_50.webp'), url('./images/dist/fruit_snack_vbg_50.jpg'));
+            background-image: -ms-image-set(url('./images/dist/fruit_snack_vbg_50.webp'), url('./images/dist/fruit_snack_vbg_50.jpg'));
+            background-image: image-set(url('./images/dist/fruit_snack_vbg_50.webp') 1x, url('./images/dist/fruit_snack_vbg_50.jpg') 2x);
+        }
+        .footer-pages {
+            background-image: url('./images/dist/fruit_snack_vbg_4.jpg');
+            background-image: -webkit-image-set(url('./images/dist/fruit_snack_vbg_4.webp'), url('./images/dist/fruit_snack_vbg_4.jpg'));
+            background-image: -ms-image-set(url('./images/fruit_snack_vbg_4.webp'), url('./images/dist/fruit_snack_vbg_4.jpg'));
+            background-image: image-set(url('./images/dist/fruit_snack_vbg_4.webp') 1x, url('./images/dist/fruit_snack_vbg_4.jpg') 2x);
+        }
+    </style>
 </head>
 
 <body>
@@ -21,7 +41,7 @@
                     <li class="header__aitems header__aitems_none">
                         <a class="header__link header__link_open-burger" href="#catalog">Каталог</a>
                     </li>
-                    <li class="header__aitems header__aitems_none">
+                    <li class="header__aitems header__none">
                         <a class="header__link header__link_open-burger" href="#contacts">Контакты</a>
                     </li>
                     <li class="header__aitems">
@@ -55,30 +75,6 @@
                                     src="./images/dist/sprite.svg#icons5-telegram" class="messenger__svg-icons"
                                     alt="icons1-telegram"></a>
                         </li>
-                        <style>
-                            .svg-instagram {
-                                padding-left: 6px;
-                                width: 40px;
-                                height: 40px;
-                            }
-
-                            .svg-vk {
-                                padding-left: 6px;
-                                width: 40px;
-                                height: 40px;
-                            }
-
-                            .svg-whatsapp {
-                                padding-left: 6px;
-                                width: 40px;
-                                height: 40px;
-                            }
-
-                            .svg-telegram {
-                                width: 46px;
-                                height: 46px;
-                            }
-                        </style>
                     </ul>
                     <div class="number">
                         <a class="number__tel" href="tel:+79819350626">+7-981-935-06-26</a>
@@ -106,15 +102,6 @@
 
     <main class="main">
         <section class="section-hero">
-            <style>
-                .section-hero {
-                    background-image: url('./images/dist/bacground-icon.jpg');
-                    background-image: -webkit-image-set(url('./images/dist/bacground-icon.webp'), url('./images/dist/bacground-icon.jpg'));
-                    background-image: -ms-image-set(url('./images/dist/bacground-icon.webp'), url('./images/dist/bacground-icon.jpg'));
-                    background-image: image-set('./images/dist/bacground-icon.webp' 1x, './images/dist/bacground-icon.jpg' 2x);
-                }
-            </style>
-
             <div class="section-hero__container">
                 <div class="section-hero__inner">
                     <h1>
@@ -189,7 +176,7 @@
                     <li>
                         <picture>
                             <source srcset="./images/dist/Pastil-sliva-med-200r.webp" type="image/webp">
-                            <img src="./images/dist/Pastil-sliva-med-200r.jpg">
+                            <img src="./images/dist/Pastil-sliva-med-200r.jpg"  alt="пастила вишня-банан-мёд">
                         </picture>
                         <p>
                             <span>Пастила</span> <br> Слива-яблоко <br> 200 ₽
@@ -471,14 +458,6 @@
         </section>
 
         <section class="catalog-pastil catalog-pastil__bg-dark-color">
-            <style>
-                .catalog-pastil__bg-dark-color {
-                    background-image: url('./images/dist/fruit_snack_vbg_50.jpg');
-                    background-image: -webkit-image-set(url('./images/dist/fruit_snack_vbg_50.webp'), url('./images/dist/fruit_snack_vbg_50.jpg'));
-                    background-image: -ms-image-set(url('./images/dist/fruit_snack_vbg_50.webp'), url('./images/dist/fruit_snack_vbg_50.jpg'));
-                    background-image: image-set('./images/dist/fruit_snack_vbg_50.webp' 1x, './images/dist/fruit_snack_vbg_50.jpg' 2x);
-                }
-            </style>
             <div class="container">
                 <h2 class="title title_white-color">
                     Наши <span class="active-text">фрипсы</span>
@@ -754,14 +733,6 @@
     </main>
 
     <footer class="footer-pages" id="contacts">
-        <style>
-            .footer-pages {
-                background-image: url('./images/dist/fruit_snack_vbg_4.jpg');
-                background-image: -webkit-image-set(url('./images/dist/fruit_snack_vbg_4.webp'), url('./images/dist/fruit_snack_vbg_4.jpg'));
-                background-image: -ms-image-set(url('./images/fruit_snack_vbg_4.webp'), url('./images/dist/fruit_snack_vbg_4.jpg'));
-                background-image: image-set('./images/dist/fruit_snack_vbg_4.webp', './images/dist/fruit_snack_vbg_4.jpg');
-            }
-        </style>
         <div class="footer-pages__color-inner">
             <div class="footer-pages__container ">
                 <h2 class="footer-pages__title">
@@ -794,7 +765,8 @@
                     <a href="tel:+79819350626">+7-981-935-06-26</a>
                 </div>
                 <div class="icons-site">
-                    <a class="icons-8" target="_blank" href="https://icons8.com/icon/113079/заполненный-круг">иконки от</a>
+                    <a class="icons-8" target="_blank" href="https://icons8.com/icon/113079/заполненный-круг">иконки
+                        от</a>
                     <a class="icons-8" target="_blank" href="https://icons8.com">Icons8</a>
                 </div>
             </div>
