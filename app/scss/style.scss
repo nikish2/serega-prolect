@@ -453,26 +453,32 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 
+    &__color-inner {
+        background: rgba(0, 0, 0, 0.2);
+
+    }
+
     &__container {
         max-width: $container-width;
         width: 100%;
         margin: auto;
         padding: 100px 0 60px 0;
+
     }
 
     &__title {
         @include fluid-text(55, 30);
         text-align: center;
-        color: $color-brown-dark;
-        color: var(--main);
+        color: $color-white;
+
     }
 
     &__sub-title {
         @include fluid-text(30, 25);
         text-align: center;
         margin: 15px 0 25px 0;
-        color: $color-brown-dark;
-        color: var(--main);
+        color: $color-white;
+
     }
 
     &__wrapper {
@@ -516,6 +522,16 @@ body {
         }
     }
 
+    .icons-site {
+        margin-top: 20px;
+        opacity: 0.5;
+        text-align: center;
+    }
+
+    .icons-8 {
+        color: #ffff;
+    }
+
     &__instagram,
     &__vk,
     &__WhatSapp,
@@ -541,7 +557,7 @@ body {
             margin-bottom: 0;
             color: $color-brown-dark;
             font-weight: 600;
-            color: var(--main);
+            color: $color-white;
         }
 
         & a {
@@ -686,9 +702,10 @@ body {
 
 
 @media(max-width:$laptop) {
-    .header__nav{
+    .header__nav {
         gap: 10px;
     }
+
     .running-image__active {
         height: 190px;
     }
@@ -725,7 +742,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap:20%;
+        gap: 20%;
         opacity: 0;
         transform: translateX(-100%);
         position: absolute;
