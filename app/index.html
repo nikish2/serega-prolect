@@ -105,9 +105,15 @@
 
 
     <main class="main">
-        <section class="section-hero" style="background-image: image-set(
-        url(./images/dist/bacground-icon.webp), 
-        url(./images/dist/bacground-icon.jpg));">
+        <section class="section-hero">
+            <style>
+                .section-hero {
+                     background-image: url('./images/dist/bacground-icon.jpg');
+                     background-image: -webkit-image-set(url('./images/dist/bacground-icon.webp'), url('./images/dist/bacground-icon.jpg'));
+                     background-image: -ms-image-set(url('./images/dist/bacground-icon.webp'), url('./images/dist/bacground-icon.jpg'));
+                     background-image: image-set('./images/dist/bacground-icon.webp' 1x, './images/dist/bacground-icon.jpg' 2x);
+                 }
+             </style>
 
             <div class="section-hero__container">
                 <div class="section-hero__inner">
