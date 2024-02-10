@@ -2,31 +2,31 @@
 const menu = document.querySelector('.header__nav');
 const burger = document.querySelector('.header__burger');
 
-const bodY = document.body;
 if(menu && burger) {
   burger.addEventListener('click', ()=> {
     menu.classList.toggle('_active');
     burger.classList.toggle('_active');
-    // bodY.classList.toogle('lock');
+    // РАБОТАЕТ ВО ВСЕХ БРАУЗЕРАХ И НА ВСЕХ СТРАНИЦАХ 
   })
 }
 
-let objektHtml = document.querySelector('.active-text');
-if (objektHtml) {
+let infiniteText = document.querySelector('.active-text');
+if (infiniteText) {
   const text = 'фрипсы';
 
   let i = 0;
   function runLine() {
     if (i++ < text.length) {
-      objektHtml.innerHTML = text.substring(0, i) + '|'
+      infiniteText.innerHTML = text.substring(0, i) + '|'
     }
     else {
-      objektHtml.innerHTML = "";
+      infiniteText.innerHTML = "";
       i = 0;
     }
     dossne = setTimeout('runLine()', 500)
   }
   runLine();
+  // НЕ РАБОТАЕТ В SAFARI НАХОДИТСЯ НА 1 СТРАНИЦЕ
 }
 
 
@@ -47,6 +47,7 @@ if (openBlock) {
     }
   });
 }
+// НЕ РАБОТАЕТ В SAFARI НАХОДИТСЯ НА 1 СТРАНИЦЕ
 
 let elements = document.querySelector('.anim');
 if (elements) {
@@ -65,9 +66,10 @@ if (elements) {
     });
   };
 }
+// РАБОТАЕТ ВЕЗДЕ НО НАХОДИТСЯ НА 3 СТРАНИЦЕ ИЗ 3
+
 
 // создание светлой и темной темы при обновлении страницы тема запоминается и остается 
-
 const body = document.body;
 const theme = document.querySelector('.theme');
 
@@ -102,7 +104,8 @@ function themeModeToggle(newMode) {
     body.className = '';
     mode = 'light';
   }
-}
+}   // РАБОТАЕТ ВЕЗДЕ КРОМЕ 1 СТРАНИЦЫ В SAFARI 1 из 3
+
 
 
 
