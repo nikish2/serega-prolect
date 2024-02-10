@@ -11,13 +11,8 @@ if(menu && burger) {
   })
 }
 
-
-
-
-
 let objektHtml = document.querySelector('.active-text');
-if (typeof (objektHtml) != 'undefined' && objektHtml != null) {
-  const objektHtml = document.querySelector('.active-text');
+if (objektHtml) {
   const text = 'фрипсы';
 
   let i = 0;
@@ -39,7 +34,7 @@ if (typeof (objektHtml) != 'undefined' && objektHtml != null) {
 
 let openBlock = document.querySelector('.open');
 let openText = document.querySelector('.catalog-pastil__description-product');
-if (typeof (openBlock) != 'undefined' && openBlock != null) {
+if (openBlock) {
   document.addEventListener('DOMContentLoaded', function () {
     let openBlock = document.querySelectorAll('.open');
     let openText = document.querySelectorAll('.catalog-pastil__description-product');
@@ -54,7 +49,7 @@ if (typeof (openBlock) != 'undefined' && openBlock != null) {
 }
 
 let elements = document.querySelector('.anim');
-if (typeof (elements) != 'undefined' && elements != null) {
+if (elements) {
   let options = { threshold: [0.5] };
   let observer = new IntersectionObserver(onEntry, options);
   let elements = document.querySelectorAll('.anim');
