@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="css/style.min.css">
     <title>Пастила</title>
     <style>
+        .section-hero {
+            background-image: url('./images/dist/bacground-icon.jpg');
+            background-image: -webkit-image-set(url('./images/dist/bacground-icon.webp'), url('./images/dist/bacground-icon.jpg'));
+            background-image: -ms-image-set(url('./images/dist/bacground-icon.webp'), url('./images/dist/bacground-icon.jpg'));
+            background-image: image-set(url('./images/dist/bacground-icon.webp') 1x, url('./images/dist/bacground-icon.jpg') 2x);
+        }
+
+        .catalog-pastil__bg-dark-color {
+            background-image: url('./images/dist/fruit_snack_vbg_50.jpg');
+            background-image: -webkit-image-set(url('./images/dist/fruit_snack_vbg_50.webp'), url('./images/dist/fruit_snack_vbg_50.jpg'));
+            background-image: -ms-image-set(url('./images/dist/fruit_snack_vbg_50.webp'), url('./images/dist/fruit_snack_vbg_50.jpg'));
+            background-image: image-set(url('./images/dist/fruit_snack_vbg_50.webp') 1x, url('./images/dist/fruit_snack_vbg_50.jpg') 2x);
+        }
+
         .footer-pages {
             background-image: url('./images/dist/fruit_snack_vbg_4.jpg');
             background-image: -webkit-image-set(url('./images/dist/fruit_snack_vbg_4.webp'), url('./images/dist/fruit_snack_vbg_4.jpg'));
@@ -39,6 +53,7 @@
                         <a class="header__link" href="photo.html">Фото-блог</a>
                     </li>
                 </ul>
+
 
                 <div class="messenger">
                     <ul class="messenger__wrapper">
@@ -86,10 +101,369 @@
         </div>
     </header>
 
+
     <main class="main">
+        <section class="section-hero">
+            <div class="section-hero__container">
+                <div class="section-hero__inner">
+                    <h1>
+                        <strong>Вас приветствует <span lang="en">fruit_snack_vbg !</span></strong>
+                    </h1>
+                    <p>
+                        Наша продукция - это натуральные чипсы и пастила, приготовленная из спелых фруктов и ягод, БЕЗ
+                        сахара и БЕЗ красителей.🍏🍒🥝🍌🍓
+                        Мы сушим нашу продукцию в дегидраторе при 45-55 градусах, что позволяет сохранить во фруктах и
+                        ягодах до 98% полезных свойств и витаминов. ✅
+                    </p>
+
+                    <picture class="section-hero__circle-img">
+                        <source srcset="./images/dist/icons8-circle.webp" type="image/webp">
+                        <img class="section-hero__image" src="./images/dist/icons8-circle.png" alt="переход в каталог">
+                    </picture>
+                    <a class="section-hero__catalog" href="#catalog">Перейти <br> в каталог</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="running-image">
+            <picture class="running-image__actual">
+                <source srcset="./images/dist/image-transparent.webp" type="image/webp">
+                <img class="running-image__active" src="./images/dist/image-transparent.jpg"
+                    alt="бугущее изображение с фруктами">
+            </picture>
+
+            <picture class="running-image__actual">
+                <source srcset="./images/dist/image-transparent.webp" type="image/webp">
+                <img class="running-image__active" src="./images/dist/image-transparent.jpg"
+                    alt="бугущее изображение с фруктами">
+            </picture>
+        </section>
+
+        <section class="catalog-pastil" id="catalog">
+            <div class="container">
+                <h2 class="title">
+                    Наша <span class="title_orange ">пастила</span>
+                </h2>
+
+
+                <ul class="catalog-pastil__wrapper">
+                    <li>
+                        <picture>
+                            <source srcset="./images/dist/Pastil-vishna-banan-med-220r.webp" type="image/webp">
+                            <img src="./images/dist/Pastil-vishna-banan-med-220r.jpg" alt="пастила вишня-банан-мёд">
+                        </picture>
+                        <p>
+                            <span>Пастила</span> <br> Вишня-банан-мёд <br> 220 ₽
+                        </p>
+                        <button class="open"></button>
+                        <div class="catalog-pastil__description-product">
+                            <div style="min-height: 0;">
+                                <p>
+                                    1/2 листа - 120 руб. <br>
+                                    1/4 листа - 70 руб.
+                                </p>
+                                <p>
+                                    Пищевая ценность на 100 г продукта:
+                                    белки: 4,6 г, жиры 0,7 г, углеводы 74,6 г, эн. ценность 324,4 ккал.
+                                </p>
+                                <p>
+                                    Вес 1 листа ≈ 95 г.
+                                </p>
+                                <p>
+                                    Срок годности: 6 месяцев
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="./images/dist/Pastil-sliva-med-200r.webp" type="image/webp">
+                            <img src="./images/dist/Pastil-sliva-med-200r.jpg" alt="пастила вишня-банан-мёд">
+                        </picture>
+                        <p>
+                            <span>Пастила</span> <br> Слива-яблоко <br> 200 ₽
+                        </p>
+                        <button class="open"></button>
+                        <div class="catalog-pastil__description-product catalog-pastil__mobil">
+                            <div style="min-height: 0;">
+                                <p>
+                                    1/2 листа - 110 руб. <br>
+                                    1/4 листа - 65 руб.
+                                </p>
+                                <p>
+                                    Пищевая ценность на 100 г продукта:
+                                    белки 3,5 г, жиры 1,3 г, углеводы 69,9 г, эн. ценность 314,1 ккал.
+                                </p>
+                                <p>
+                                    Вес 1 листа ≈ 75 г.
+                                </p>
+                                <p>
+                                    Срок годности: 6 месяцев
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="./images/dist/Pastil-grysha-apple-200r.webp" type="image/webp">
+                            <img src="./images/dist/Pastil-grysha-apple-200r.jpg" alt="пастила груша-яблоко">
+                        </picture>
+                        <p>
+                            <span>Пастила</span> <br> Груша-яблоко <br> 200 ₽
+                        </p>
+                        <button class="open"></button>
+                        <div class="catalog-pastil__description-product catalog-pastil__transform_tablet">
+                            <div style="min-height: 0;">
+                                <p>
+                                    1/2 листа - 110 руб. <br>
+                                    1/4 листа - 65 руб.
+                                </p>
+                                <p>
+                                    Пищевая ценность на 100 г продукта:
+                                    белки 2,6 г, жиры 1,4 г, углеводы 65,7 г, эн. ценность 295,4 ккал.
+                                </p>
+                                <p>
+                                    Срок годности: 6 месяцев
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="./images/dist/Pastil-apple-180r.webp" type="image/webp">
+                            <img src="./images/dist/Pastil-apple-180r.jpg" alt="пастила яблоко">
+                        </picture>
+                        <p>
+                            <span>Пастила</span> <br> Яблоко <br> 180 ₽
+                        </p>
+                        <button class="open"></button>
+                        <div class="catalog-pastil__description-product catalog-pastil__transform_laptop">
+                            <div style="min-height: 0;">
+                                <p>
+                                    1/2 листа - 100 руб. <br>
+                                    1/4 листа - 60 руб.
+                                </p>
+                                <p>
+                                    Пищевая ценность на 100 г продукта:
+                                    белки 3,3 г, жиры 3,3 г, углеводы 82 г, эн. ценность 393,3 ккал.
+                                </p>
+                                <p>
+                                    Вес 1 листа ≈ 60 г.
+                                </p>
+                                <p>
+                                    Срок годности: 6 месяцев
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="./images/dist/Pastil-klybnica-banan-med-220r.webp" type="image/webp">
+                            <img src="./images/dist/Pastil-klybnica-banan-med-220r.jpg"
+                                alt="пастила клубника-банан-мёд">
+                        </picture>
+
+                        <p>
+                            <span>Пастила</span> <br> Клубника-банан-мёд <br> 220 ₽
+                        </p>
+
+                        <button class="open"></button>
+                        <div class="catalog-pastil__description-product catalog-pastil__transform">
+                            <div style="min-height: 0;">
+                                <p>
+                                    1/2 листа - 120 руб. <br>
+                                    1/4 листа - 70 руб.
+                                </p>
+                                <p>
+                                    Пищевая ценность на 100 г продукта:
+                                    белки: 5,3 г, жиры 0,8 г, углеводы 81,1 г, эн. ценность 352,8 ккал.
+                                </p>
+                                <p>
+                                    Вес 1 листа ≈ 80 г.
+                                </p>
+                                <p>
+                                    Срок годности: 6 месяцев
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="./images/dist/Pastil-kivi-banan-200r.webp" type="image/webp">
+                            <img src="./images/dist/Pastil-kivi-banan-200r.jpg" alt="пастила киви-банан">
+                        </picture>
+                        <p>
+                            <span>Пастила</span> <br> Киви-банан <br> 200 ₽
+                        </p>
+                        <button class="open"></button>
+                        <div class="catalog-pastil__description-product catalog-pastil__transform">
+                            <div style="min-height: 0;">
+                                <p>
+                                    1/2 листа - 110 руб. <br>
+                                    1/4 листа - 65 руб.
+                                </p>
+                                <p>
+                                    Пищевая ценность на 100 г продукта:
+                                    белки: 5,9 г, жиры 2,4 г, углеводы 88 г, эн. ценность 396,7 ккал.
+                                </p>
+                                <p>
+                                    Вес 1 листа ≈ 85 г.
+                                </p>
+                                <p>
+                                    Срок годности: 6 месяцев
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="./images/dist/Pastil-apple-korica-180r.webp" type="image/webp">
+                            <img src="./images/dist/Pastil-apple-korica-180r.jpg" alt="пастила яблоко-корица">
+                        </picture>
+                        <p>
+                            <span>Пастила</span> <br> Яблоко-корица <br> 180 ₽
+                        </p>
+                        <button class="open"></button>
+                        <div class="catalog-pastil__description-product catalog-pastil__transform">
+                            <div style="min-height: 0;">
+                                <p>
+                                    1/2 листа - 100 руб. <br>
+                                    1/4 листа - 60 руб.
+                                </p>
+                                <p>
+                                    Пищевая ценность на 100 г продукта:
+                                    белки: 4 г, жиры 4 г, углеводы 82,2 г, эн. ценность 402,7 ккал.
+                                </p>
+                                <p>
+                                    Вес 1 листа ≈ 55-60 г.
+                                </p>
+                                <p>
+                                    Срок годности: 6 месяцев
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="./images/dist/Pastil-banan-orex-220r.webp" type="image/webp">
+                            <img src="./images/dist/Pastil-banan-orex-220r.jpg" alt="пастила банан-орех">
+                        </picture>
+                        <p>
+                            <span>Пастила</span> <br> Банан-орех <br> 220 ₽
+                        </p>
+                        <button class="open"></button>
+                        <div class="catalog-pastil__description-product catalog-pastil__transform">
+                            <div style="min-height: 0;">
+                                <p>
+                                    1/2 листа - 120 руб. <br>
+                                    1/4 листа - 70 руб.
+                                </p>
+                                <p>
+                                    Пищевая ценность на 100 г продукта:
+                                    белки: 7,7 г, жиры 11,1 г, углеводы 79,2 г, эн. ценность 448 ккал.
+                                </p>
+                                <p>
+                                    Вес 1 листа ≈ 110 г.
+                                </p>
+                                <p>
+                                    Срок годности: 6 месяцев
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="./images/dist/Pastil-banan-apple-180r.webp" type="image/webp">
+                            <img src="./images/dist/Pastil-banan-apple-180r.jpg" alt="пастила банан-яблоко">
+                        </picture>
+                        <p>
+                            <span>Пастила</span> <br> Банан-яблоко <br> 180 ₽
+                        </p>
+                        <button class="open"></button>
+                        <div class="catalog-pastil__description-product catalog-pastil__transform">
+                            <div style="min-height: 0;">
+                                <p>
+                                    1/2 листа - 100 руб.
+                                    1/4 листа - 60 руб.
+                                </p>
+                                <p>
+                                    Пищевая ценность на 100 г продукта:
+                                    белки: 4,7 г, жиры 1,2 г, углеводы 81,6 г, эн. ценность 363,8 ккал.
+                                </p>
+                                <p>
+                                    Вес 1 листа ≈ 85 г.
+                                </p>
+                                <p>
+                                    Срок годности: 6 месяцев
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="./images/dist/Pastil-med-240r.webp" type="image/webp">
+                            <img src="./images/dist/Pastil-med-240r.jpg" alt="пастила смородина-банан-мёд">
+                        </picture>
+                        <p>
+                            <span>Пастила</span> <br> Смородина-банан-мёд <br> 240 ₽
+                        </p>
+                        <button class="open"></button>
+                        <div class="catalog-pastil__description-product catalog-pastil__transform">
+                            <div style="min-height: 0;">
+                                <p>
+                                    1/2 листа - 130 руб. <br>
+                                    1/4 листа - 75 руб.
+                                </p>
+                                <p>
+                                    Пищевая ценность на 100 г продукта:
+                                    белки: 3 г, жиры 1,8 г, углеводы 47,2 г, эн. ценность 238 ккал.
+                                </p>
+                                <p>
+                                    Вес 1 листа ≈ 100 г.
+                                </p>
+                                <p>
+                                    Срок годности: 6 месяцев
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="./images/dist/Pastil-mandarin-200r.webp" type="image/webp">
+                            <img src="./images/dist/Pastil-mandarin-200r.jpg" alt="пастила мандарин-яблоко">
+                        </picture>
+                        <p>
+                            <span>Пастила</span> <br> Мандарин-яблоко <br> 200 ₽
+                        </p>
+                        <button class="open"></button>
+                        <div class="catalog-pastil__description-product catalog-pastil__transform">
+                            <div style="min-height: 0;">
+                                <p>
+                                    1/2 листа - 110 руб. <br>
+                                    1/4 листа - 65 руб.
+                                </p>
+                                <p>
+                                    Пищевая ценность на 100 г продукта:
+                                    белки: 4 г, жиры 1,5 г, углеводы 64,3 г, эн. ценность 297,2 ккал.
+                                </p>
+                                <p>
+                                    Вес 1 листа ≈ 65 г.
+                                </p>
+                                <p>
+                                    Срок годности: 6 месяцев
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
         <section class="catalog-pastil catalog-pastil__bg-dark-color">
             <div class="container">
-
+                <h2 class="title title_white-color">
+                    Наши <span class="active-text">фрипсы</span>
+                </h2>
 
 
                 <ul class="catalog-pastil__wrapper">
@@ -358,25 +732,6 @@
                 </ul>
             </div>
         </section>
-
-        <section class="delivery">
-            <div class="delivery__container">
-                <div class="delivery__content">
-                    <h1>Отправка по всей России</h1>
-                    <div class="delivery__inner">
-                        <p>
-                            Отправляем товар в регионы
-                        </p>
-                        <p>
-                            Доставка по тарифам транспортной компании / почты <br> за счет покупателя
-                        </p>
-                        <p>
-                            При заказе от 2500 ₽ доставка осуществляется за наш счет 👍🏼
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer class="footer-pages" id="contacts">
@@ -415,6 +770,7 @@
         </div>
     </footer>
     <script src="js/main.min.js"></script>
+
 </body>
 
 </html>
