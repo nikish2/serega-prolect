@@ -331,7 +331,37 @@ body {
             font-weight: 900;
             color: $color-white;
             @include fluid-text(45, 35);
+        }
+        &__inner-text{
+            display: inline-flex;
+        }
 
+        &__active-text {
+            width: 0%;
+            word-break: break-all;
+            overflow: hidden;
+            height: 1.2em;
+            animation: moves 3s infinite linear alternate,
+            move-1 .5s infinite alternate;
+
+            &:before{
+                content: '';
+                display: inline-block;
+            }
+        }
+        @keyframes moves {
+            90%, 100% {
+                width: 100%;
+            }
+        }
+
+        @keyframes move-1 {
+            0% {
+                box-shadow: 3px 0 0 $color-orange;
+            }
+            100% {
+                box-shadow: 3px 0 0 rgb(255, 255, 255);
+            }
         }
     }
 
@@ -758,7 +788,7 @@ body {
     .header__link_open-burger {
         display: none;
     }
-    
+
     .header__list {
         flex-direction: column;
         @include fluid-text(30, 25);
